@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <title>Mi proyecto de Star Wars</title>
+</head>
+<body>
+
+  
+  <div class="imagenpor" >
+        <h1><img id="imagen1" src="IMG/star-wars-logo-3-1.png"   alt="Logo de facebook enlace para mi perfil"/></h1>
+    </div>
+
+  <div class="busqueda">  
+    <input type="text" placeholder="Buscar personaje..." id="buscador" onkeyup="llamarBusqueda()"/>
+    <button onclick="llamarBusqueda()">Buscar</button>
+    <button onclick="reiniciarData()">Reiniciar</button>
+    <select name="sort" id="sort" onchange="ordenarPersonajes()">
+      <option value="none">Sin ordenar</option>
+      <option value="mayor">Mayor</option>
+      <option value="menor">Menor</option>
+    </select>
+  </div>
+  <div id="personajes-wrapper" class="row">
+  </div>
+  <div class="botonderegreso">
+  <a href="#" class="btn btn-primary">Vuelve arriba</a>
+  </div>
+  
+
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
